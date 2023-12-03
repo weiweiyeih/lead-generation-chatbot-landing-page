@@ -13,16 +13,17 @@ export const Header = () => {
         >
             <SectionContainer className="header--container wrap wrap-px ">
                 <div className="header-logo--container">
-                    <h1 className="logo mb-0">
+                    <h1 className="logo mb-0 font-bold text-3xl">
                         <Link href="/">
-                            <Image
+                            A.I. Chatbot
+                            {/* <Image
                                 src="/nutritrack.svg"
                                 alt="logo"
                                 className="h-6 w-auto"
                                 height="24"
                                 width="100"
                                 priority
-                            />
+                            /> */}
                         </Link>
                     </h1>
                 </div>
@@ -31,10 +32,10 @@ export const Header = () => {
                     <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
-                            href="https://github.com/christian-luntok/nutritrack"
+                            href="#try"
                             className="btn btn--secondary ml-4"
                         >
-                            Get Template
+                            立即體驗
                             <Icon icon="material-symbols:arrow-forward-rounded" />
                         </a>
                     </ButtonGroup>

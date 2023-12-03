@@ -6,19 +6,19 @@ import { v4 as uuid } from "uuid";
 const ContentImageData = [
     {
         id: uuid(),
-        title: "Effortless Planning",
+        title: "A.I.真智能",
         content:
-            "Say goodbye to meal planning stress! With NutriTrack, planning your meals becomes a breeze. Our user-friendly Notion template lets you create customized daily or weekly meal plans effortlessly. Enjoy a balanced and nutritious diet without the hassle.",
+            "我們的A.I. Chatbot智能聊天機器人使用 A.I. 深度機器學習技術，也就是通過學習大量文本數據而後預測答案，具有比傳統聊天機器人更高的語言理解和生成能力，可進行更自然、流暢的對話。不需要預設腳本，就可以幫你收集客戶名單！",
         align: "right",
-        image: "/features1.png"
+        image: "/ai-intelligence.jpg"
     },
     {
         id: uuid(),
-        title: "Shopping List",
+        title: "24/7 全天候服務",
         content:
-            "We've got your grocery shopping covered! NutriTrack includes a handy shopping list feature. As you plan your meals, the template automatically generates a comprehensive shopping list. No more forgotten items or aimless wandering in the supermarket. Shopping for healthy ingredients has never been easier!",
+            "A.I. 對話機器人能夠提供全天候的協助，與使用者隨時互動，有助於在正常工作時間之外提供資訊，並進行客戶開發。其智能化的應對機制不受時區限制，無論使用者身在何處、何時需要支援，都能即時回應需求。這不僅提供了極大的方便性，同時確保了您的潛在客戶在任何時刻都能得到迅速而有效的互動體驗。",
         align: "left",
-        image: "/features2.png"
+        image: "/call-center.jpg"
     }
 ];
 

@@ -14,34 +14,33 @@ export const HomeBanner = () => {
                 {/* Appear First */}
                 <MotionBTTContainer transition={{ delay: 0.2, duration: 0.5 }}>
                     <BadgeGroup alignment="center">
-                        <BadgeMessage>Discover NutriTrack!</BadgeMessage>
-                        <BadgeIcon icon="game-icons:meal" />
+                        <BadgeMessage>Discover A.I. Chatbot</BadgeMessage>
+                        {/* <BadgeIcon icon="game-icons:iteligence" /> */}
                     </BadgeGroup>
                 </MotionBTTContainer>
                 {/* Appear Second */}
                 <MotionBTTContainer transition={{ delay: 0.4, duration: 0.5 }}>
                     <PageTitle className="text-center mx-auto" type="heavy">
-                        The effortless way to plan your meals with the power of
-                        Notion.
+                        智能對話，有效集客
                     </PageTitle>
                 </MotionBTTContainer>
                 {/* Appear Third */}
                 <MotionBTTContainer transition={{ delay: 0.6, duration: 0.5 }}>
                     <Content className="text-center" alignment="center">
                         <p>
-                            Streamline your nutrition journey and achieve your
-                            health goals with ease.{" "}
+                            AI
+                            對話機器人，助您輕鬆開拓商機，精準收集目標客戶清單
                         </p>
                     </Content>
                     <div className="mt-6 mb-16 text-center">
                         <ButtonGroup alignment="center">
-                            <Button href="#features">Features</Button>
+                            <Button href="#features">產品特色</Button>
                             <a
                                 role="button"
-                                href="https://github.com/christian-luntok/nutritrack"
+                                href="/#try"
                                 className="btn btn--secondary"
                             >
-                                Get Template
+                                立即體驗
                                 <Icon icon="material-symbols:arrow-forward-rounded" />
                             </a>
                         </ButtonGroup>
@@ -51,7 +50,7 @@ export const HomeBanner = () => {
                 <MotionBTTContainer transition={{ delay: 0.8, duration: 0.5 }}>
                     <div className="page-banner--image">
                         <Image
-                            src="/nutritrack-hero-banner.png"
+                            src="/chatwindow.png"
                             width={1024}
                             height={680}
                             alt="Page Banner"

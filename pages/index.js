@@ -16,13 +16,19 @@ import {
     CardImage,
     Card
 } from "@components/Card";
+import ChatPopup from "@components/ChatPopop/ChatPopup";
+import ChatSection from "@components/ChatSection/ChatSection";
+import { ButtonGroup, Button } from "@components/Button";
+import { Icon } from "@iconify/react";
+import Link from "next/link";
 
 export default function Home() {
     return (
         <Layout className="">
             <SEO
-                title="NutriTrack - A landing page template 🚀"
-                description="Discover NutriTrack, the effortless way to plan your meals with the power of Notion. Streamline your nutrition journey and achieve your health goals with ease."
+                title="A.I. Chatbot 🤖"
+                description="AI
+                            對話機器人，助您輕鬆開拓商機，精準收集目標客戶清單"
             />
             <div className="main-wrapper bg-[#F3F5F8] relative z-10 pb-20 pt-20 ">
                 {/* { Page Banner } */}
@@ -41,17 +47,10 @@ export default function Home() {
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Simplify Your Nutrition Journey with NutriTrack
+                                對話機器人的卓越行銷功能
                             </PageTitle>
                             <Content className="text-center" alignment="center">
-                                <p>
-                                    Hey there! Welcome to NutriTrack, the
-                                    ultimate nutrition meal planner powered by
-                                    Notion. We&apos;ve got some awesome features
-                                    lined up to make your nutrition journey a
-                                    piece of cake (pun intended). Check them
-                                    out:
-                                </p>
+                                <p>深度互動、精準線索，助您引領行銷新紀元</p>
                             </Content>
                             <ContentImage />
                         </SectionContainer>
@@ -69,58 +68,48 @@ export default function Home() {
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Master Your Meal Planning and Nutrition Journey
+                                智慧融合，革命性行銷策略引爆！
                             </PageTitle>
                             <Content className="text-center" alignment="center">
                                 <p>
-                                    Our comprehensive Notion template designed
-                                    to empower you on your meal planning and
-                                    nutrition journey. With our user-friendly
-                                    features, customizable layouts, and seamless
-                                    recipe integration, taking control of your
-                                    meals has never been easier.
+                                    A.I.
+                                    對話機器人：無縫商機轉化，透過自動化與極致便利，讓您的行銷策略輕鬆實現。打造您的品牌未來，與創新科技一同翱翔於行銷的全新藍海，將商機源源不絕引入您的業務。
                                 </p>
                             </Content>
                             <CardGroup className="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2">
                                 <Card className="col-span-1 text-primary-900">
                                     <CardBody className="w-full bg-white-600/20 p-12">
                                         <CardImage
-                                            src="/features4.png"
+                                            src="/crm.jpg"
                                             alt="Customizable Layouts image used."
                                         />
                                         <CardHeader className="!text-black !text-2xl !font-bold">
-                                            Customizable Layouts
+                                            自動匯出客戶資訊
                                         </CardHeader>
                                         <p>
-                                            Personalize your meal planning
-                                            experience with our flexible
-                                            layouts. Tailor your sections,
-                                            categories, and tabs to suit your
-                                            unique style and organization
-                                            preferences. Our template adapts to
-                                            your needs, providing a seamless and
-                                            personalized planning experience.
+                                            無縫橋接，A.I.
+                                            對話機器人自動將商機送入您的 CRM
+                                            或指定工作表，為您的業務開啟了全新的銷售前景。這項先進功能不僅節省了繁瑣的手動匯入步驟，更確保了線索的即時且準確的整合。這樣的智能匯出機制使您能夠即刻回應潛在客戶的需求，迅速啟動個性化的行銷活動，從而打造更加細緻且高效的銷售管道。讓
+                                            A.I.
+                                            對話機器人成為您行銷策略的得力助手，實現商機無縫轉化，為業務的成功鋪平道路。
                                         </p>
                                     </CardBody>
                                 </Card>
                                 <Card className="col-span-1 text-primary-900">
                                     <CardBody className="w-full bg-white-600/20 p-12">
                                         <CardImage
-                                            src="/features3.png"
+                                            src="/code.jpg"
                                             alt="Progress Tracking image used."
                                         />
                                         <CardHeader className="!text-black !text-2xl !font-bold">
-                                            Progress Tracking
+                                            輕鬆多元部署
                                         </CardHeader>
                                         <p>
-                                            Celebrate your wins and stay
-                                            motivated on your nutrition journey.
-                                            NutriTrack allows you to monitor
-                                            your progress with weight,
-                                            measurements, and other key metrics.
-                                            Track your improvements over time
-                                            and see the positive impact of your
-                                            healthy choices.
+                                            A.I.
+                                            對話機器人擁有多元選擇，讓您根據您的需求選擇最適合的方式。無論是嵌入代碼於您的網站，或是透過部署專屬
+                                            URL 分享至各種平台，都能輕鬆實現
+                                            A.I.
+                                            對話機器人的全面覆蓋。這種多元化的部署方式，讓您能夠根據不同的營銷策略和目標，靈活調整對話機器人的呈現形式。打造獨一無二的客戶互動體驗，讓您的品牌在數位領域中脫穎而出，贏得客戶的青睞。
                                         </p>
                                     </CardBody>
                                 </Card>
@@ -140,8 +129,7 @@ export default function Home() {
                                 <BadgeIcon icon="twemoji:waving-hand" />
                             </BadgeGroup>
                             <PageTitle className="" type="default">
-                                This is what our customers have to say about
-                                this template
+                                這些都是用戶給我們的真實反饋
                             </PageTitle>
                             <Columns />
                         </SectionContainer>
@@ -150,23 +138,87 @@ export default function Home() {
                     <MotionBTTContainer
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        <SectionContainer id="faq" className="faq">
+                        <SectionContainer id="try" className="faq">
                             <BadgeGroup alignment="center">
-                                <BadgeMessage>FAQ</BadgeMessage>
+                                <BadgeMessage>Try it now!</BadgeMessage>
                             </BadgeGroup>
                             <PageTitle
                                 className="text-center mx-auto"
                                 type="default"
                             >
-                                Got some burning questions about NutriTrack?{" "}
-                                <br></br>
-                                <br></br>No worries! We&apos;ve got the answers
-                                you need:
+                                親身體驗，感受威力
                             </PageTitle>
-                            <Accordion />
+                            <Content className="text-center" alignment="center">
+                                <p>
+                                    點擊下方「開啟全頁對話匡」的按鈕來開啟全頁對話匡，或點擊右下角的訊息圖示，即可開始與A.I.
+                                    Chatbot展開對話。點擊下方「查看所搜集的資訊」的按鈕，便可查看自動傳送到指定
+                                    Google sheet 中的客戶資訊。
+                                </p>
+                            </Content>
+                            <CardGroup className="grid scroll-m-24 gap-8 grid-cols-1 max-w-4xl mx-auto mt-24 md:grid-cols-2">
+                                <Card className="col-span-1 text-primary-900">
+                                    <CardBody className="w-full bg-white-600/20 p-12">
+                                        <CardImage
+                                            src="/chatwindow.png"
+                                            alt="Customizable Layouts image used."
+                                        />
+                                        {/* <CardHeader className="!text-black !text-2xl !font-bold">
+                                            自動匯出客戶資訊
+                                        </CardHeader> */}
+                                        <ButtonGroup className="flex flex-col">
+                                            <a
+                                                role="button"
+                                                href="https://chatbot.wbi.cam/chatbot/5de6edfa-6ded-4964-9452-43c4be839bf6"
+                                                className="btn btn--secondary mt-4"
+                                                target="_blank"
+                                            >
+                                                開啟全頁對話匡
+                                            </a>
+                                        </ButtonGroup>
+                                        {/* <p>
+                                            無縫橋接，A.I.
+                                            對話機器人自動將商機送入您的 CRM
+                                            或指定工作表，為您的業務開啟了全新的銷售前景。這項先進功能不僅節省了繁瑣的手動匯入步驟，更確保了線索的即時且準確的整合。這樣的智能匯出機制使您能夠即刻回應潛在客戶的需求，迅速啟動個性化的行銷活動，從而打造更加細緻且高效的銷售管道。讓
+                                            A.I.
+                                            對話機器人成為您行銷策略的得力助手，實現商機無縫轉化，為業務的成功鋪平道路。
+                                        </p> */}
+                                    </CardBody>
+                                </Card>
+                                <Card className="col-span-1 text-primary-900">
+                                    <CardBody className="w-full bg-white-600/20 p-12">
+                                        <CardImage
+                                            src="/demo-sheet.png"
+                                            alt="Progress Tracking image used."
+                                        />
+                                        {/* <CardHeader className="!text-black !text-2xl !font-bold">
+                                            輕鬆多元部署
+                                        </CardHeader> */}
+                                        <ButtonGroup className="flex flex-col">
+                                            <a
+                                                role="button"
+                                                href="https://docs.google.com/spreadsheets/d/19ZKp5tqzbLS6PNJ-aoLz6avDlnHAoH8EeeZOpgV9_lI/edit?usp=sharing"
+                                                className="btn btn--secondary mt-4"
+                                                target="_blank"
+                                            >
+                                                查看所搜集的資訊
+                                            </a>
+                                        </ButtonGroup>
+                                        {/* <p>
+                                            A.I.
+                                            對話機器人擁有多元選擇，讓您根據您的需求選擇最適合的方式。無論是嵌入代碼於您的網站，或是透過部署專屬
+                                            URL 分享至各種平台，都能輕鬆實現
+                                            A.I.
+                                            對話機器人的全面覆蓋。這種多元化的部署方式，讓您能夠根據不同的營銷策略和目標，靈活調整對話機器人的呈現形式。打造獨一無二的客戶互動體驗，讓您的品牌在數位領域中脫穎而出，贏得客戶的青睞。
+                                        </p> */}
+                                    </CardBody>
+                                </Card>
+                            </CardGroup>
+                            {/* <ChatSection /> */}
+                            {/* <Accordion /> */}
                         </SectionContainer>
                     </MotionBTTContainer>
                 </SectionContainer>
+                <ChatPopup />
             </div>
         </Layout>
     );
