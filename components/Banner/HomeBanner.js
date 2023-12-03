@@ -6,6 +6,7 @@ import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
+import Link from "next/link";
 
 export const HomeBanner = () => {
     return (
@@ -35,14 +36,14 @@ export const HomeBanner = () => {
                     <div className="mt-6 mb-16 text-center">
                         <ButtonGroup alignment="center">
                             <Button href="#features">產品特色</Button>
-                            <a
+                            <Link
                                 role="button"
                                 href="/#try"
                                 className="btn btn--secondary"
                             >
                                 立即體驗
                                 <Icon icon="material-symbols:arrow-forward-rounded" />
-                            </a>
+                            </Link>
                         </ButtonGroup>
                     </div>
                 </MotionBTTContainer>

@@ -166,14 +166,14 @@ export default function Home() {
                                             自動匯出客戶資訊
                                         </CardHeader> */}
                                         <ButtonGroup className="flex flex-col">
-                                            <a
+                                            <Link
                                                 role="button"
                                                 href="https://chatbot.wbi.cam/chatbot/5de6edfa-6ded-4964-9452-43c4be839bf6"
                                                 className="btn btn--secondary mt-4"
                                                 target="_blank"
                                             >
                                                 開啟全頁對話匡
-                                            </a>
+                                            </Link>
                                         </ButtonGroup>
                                         {/* <p>
                                             無縫橋接，A.I.
@@ -194,14 +194,14 @@ export default function Home() {
                                             輕鬆多元部署
                                         </CardHeader> */}
                                         <ButtonGroup className="flex flex-col">
-                                            <a
+                                            <Link
                                                 role="button"
                                                 href="https://docs.google.com/spreadsheets/d/19ZKp5tqzbLS6PNJ-aoLz6avDlnHAoH8EeeZOpgV9_lI/edit?usp=sharing"
                                                 className="btn btn--secondary mt-4"
                                                 target="_blank"
                                             >
                                                 查看所搜集的資訊
-                                            </a>
+                                            </Link>
                                         </ButtonGroup>
                                         {/* <p>
                                             A.I.

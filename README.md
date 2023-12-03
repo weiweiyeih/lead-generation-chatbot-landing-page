@@ -2,7 +2,7 @@
   A.I. Chatbot landing page 🤖
 </h1>
 
-This landing page is to promote an A.I. lead-generation chatbot Saas product. It mainly introduces the features of the cahtbot and encourages users to experience the power by interacting with the chatbot.
+This landing page is to promote an A.I. lead-generation chatbot Saas product. It mainly introduces the features of the chatbot and encourages users to experience the power by interacting with the chatbot.
 
 <hr>
 
